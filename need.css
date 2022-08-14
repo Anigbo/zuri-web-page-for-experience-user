@@ -790,6 +790,27 @@ width: 20%;
         
         }
 
+ @media (max-width: 360px) {
+            h4 {
+                
+                font-size: 25px;
+                
+             }
+
+             .stacks ul li {
+                width: 130px;
+                
+                }
+
+    .first, .second, .third, .four, .five {
+        width: 330px;
+    }
+
+    #why-btn2  {
+        width: 45%;
+        padding: 14px;
+    }
+        }
 
 
 
