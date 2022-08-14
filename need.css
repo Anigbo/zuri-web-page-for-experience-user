@@ -10,6 +10,8 @@
     font-family: 'roboto', sans-serif;
     overflow-y: hidden;
     overflow-x: hidden;
+    scroll-behavior: smooth;
+    
 }
 
 header {
@@ -53,13 +55,88 @@ nav a button {
     border-bottom-right-radius: 10px;
     cursor: pointer;
 }
-nav a:hover {
 
-background-color: rgb(223, 217, 217);
+ .nav-home:after {
+    position: absolute;
+    top: 60px;
+    bottom: 0;
+    left: 14px;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: rgb(223, 5, 5);
+    height: 3px;
+    width: 12%;
 
 }
 
 
+
+ nav .span1:after {
+    display: block;
+  position: absolute;
+  top: 10px;
+    bottom: 0;
+    left: 14px;
+  margin: auto;
+  width: 12%;
+  height: 1px;
+  content: '.';
+  color: transparent;
+  background: rgb(248, 247, 247);
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
+ }
+ nav .span1:hover:after {
+    opacity: 1;
+    visibility: visible;
+    height: 70px;
+  }
+
+  nav .span2:after {
+    display: block;
+  position: absolute;
+  top: 10px;
+    bottom: 0;
+    left: 105px;
+  margin: auto;
+  width: 12%;
+  height: 1px;
+  content: '.';
+  color: transparent;
+  background: rgb(248, 247, 247);
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
+ }
+ nav .span2:hover:after {
+    opacity: 1;
+    visibility: visible;
+    height: 70px;
+ }
+ nav .span3:after {
+    display: block;
+  position: absolute;
+  top: 10px;
+    bottom: 0;
+    left: 195px;
+  margin: auto;
+  width: 15%;
+  height: 1px;
+  content: '.';
+  color: transparent;
+  background: rgb(248, 247, 247);
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
+ }
+ nav .span3:hover:after {
+    opacity: 1;
+    visibility: visible;
+    height: 70px;
+ }
 .talents {
     background-color: #fff;
     width: 100%;
@@ -194,6 +271,11 @@ h4 mark {
     background: none;
 }
 
+.stacks {
+    background-color: rgb(251, 252, 253);
+    opacity: 0.8;
+}
+
 .stacks ul {
     padding: 10px;
     margin: 20px;
@@ -203,27 +285,31 @@ h4 mark {
     z-index: 8;
     
 }
-.stacks ul:hover {
-    
-    transition: all 5s;
-    transform: scale(10px);
-}
-.stacks ul li {
+
+
+ .stacks ul li {
     list-style-type: none;
     border: none;
     padding: 10px;
-    background-color: #ffffff;
+    background-color: #fff;
     color: rgb(114, 113, 113);
-    box-shadow: 1px 1px rgb(214, 200, 200);
     font-size: larger;
     margin: 20px;
     margin-left: 52px;
     border-radius: 5px;
+    transition: top;
+    transition-delay: 3s;
+    transition-duration: 10s;
+    box-shadow: 2px 2px 2px 2px rgb(245, 249, 253);;
+    height: 50px;
     
-
 }
 
-
+  ul li:hover {
+    position: relative;
+    top: -18px;
+    
+}
 
 .stacks #wire3 {
     position: relative;
